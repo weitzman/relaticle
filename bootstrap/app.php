@@ -49,16 +49,14 @@ return Application::configure(basePath: dirname(__DIR__))
             fn (Request $request): bool => $request->is('chat') || $request->is('chat/*'),
         ]);
 
-        $middleware->trustProxies(at: [
-            '127.0.0.0/8',
-            '10.0.0.0/8',
-            '172.16.0.0/12',
-            '192.168.0.0/16',
-            '169.254.0.0/16',
-            '::1/128',
-            'fc00::/7',
-            'fe80::/10',
-        ]);
+        // Laravel Cloud terminates TLS at its own edge/load balancer and
+        // forwards requests to the app container over plain HTTP, setting
+        // X-Forwarded-* headers. That edge is the only thing able to reach
+        // the container directly, so it's safe (and necessary) to trust it
+        // unconditionally -- otherwise Laravel thinks every request is
+        // insecure and generates http:// URLs (e.g. for Livewire's update
+        // endpoint), which browsers then block as mixed content.
+        $middleware->trustProxies(at: '*');
 
         $middleware->prepend(SubdomainRootResponse::class);
 
