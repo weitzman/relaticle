@@ -4,12 +4,12 @@
         "claude_code",
         "copilot",
         "opencode",
-        "gemini",
-        "amp",
         "cursor",
-        "codex"
+        "codex",
+        "antigravity",
+        "zed"
     ],
-    "cloud": false,
+    "cloud": true,
     "guidelines": true,
     "mcp": true,
     "nightwatch": false,
@@ -17,7 +17,9 @@
         "filament/filament",
         "spatie/laravel-medialibrary",
         "spatie/guidelines-skills",
-        "spatie/laravel-query-builder"
+        "spatie/laravel-query-builder",
+        "relaticle/custom-fields",
+        "relaticle/flowforge"
     ],
     "sail": false,
     "skills": [
@@ -30,13 +32,15 @@
         "socialite-development",
         "livewire-development",
         "pest-testing",
-        "echo-development",
         "tailwindcss-development",
+        "custom-fields-development",
+        "flowforge-development",
         "medialibrary-development",
         "laravel-query-builder",
         "spatie-javascript",
         "spatie-laravel-php",
         "spatie-security",
-        "spatie-version-control"
+        "spatie-version-control",
+        "deploying-laravel-cloud"
     ]
 }

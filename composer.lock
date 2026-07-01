@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "40faf0a1775f08fd100bb1f651afe325",
+    "content-hash": "b7e0ff5425a1b16488366e339b8b8469",
     "packages": [
         {
             "name": "andreiio/blade-remix-icon",
@@ -3361,6 +3361,77 @@
                 "source": "https://github.com/laravel/ai"
             },
             "time": "2026-05-11T10:46:54+00:00"
+        },
+        {
+            "name": "laravel/cloud-cli",
+            "version": "v0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/cloud-cli.git",
+                "reference": "f03d317d33867c1b511b60d8c3a7b3ddd8d29454"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/cloud-cli/zipball/f03d317d33867c1b511b60d8c3a7b3ddd8d29454",
+                "reference": "f03d317d33867c1b511b60d8c3a7b3ddd8d29454",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "illuminate/http": "^12.17",
+                "illuminate/translation": "^12.53",
+                "illuminate/validation": "^12.53",
+                "laravel-zero/framework": "^12.0.2",
+                "laravel-zero/phar-updater": "^1.4",
+                "laravel/pint": "^1.25.1",
+                "mockery/mockery": "^1.6.12",
+                "pestphp/pest": "^3.8.4|^4.1.2",
+                "php-parallel-lint/php-console-highlighter": "^1.0",
+                "phpstan/phpstan": "^2.1",
+                "saloonphp/cache-plugin": "^3.1",
+                "saloonphp/pagination-plugin": "^2.3",
+                "saloonphp/saloon": "^4.0",
+                "shipfastlabs/agent-detector": "^1.0",
+                "spatie/laravel-data": "^4.19"
+            },
+            "bin": [
+                "builds/cloud"
+            ],
+            "type": "project",
+            "autoload": {
+                "files": [
+                    "app/helpers.php"
+                ],
+                "psr-4": {
+                    "App\\": "app/",
+                    "Database\\Seeders\\": "database/seeders/",
+                    "Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "CLI to interact with Laravel Cloud",
+            "homepage": "https://cloud.laravel.com",
+            "keywords": [
+                "cli",
+                "cloud",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/cloud-cli/issues",
+                "source": "https://github.com/laravel/cloud-cli"
+            },
+            "time": "2026-06-01T20:45:43+00:00"
         },
         {
             "name": "laravel/fortify",
